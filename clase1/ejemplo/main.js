@@ -9,5 +9,9 @@ console.log(arrays.sumaPares(miArreglo));
 const utilesObjetos = require('./objetos/objetos.js'); 
 console.log(utilesObjetos.persona());
 
+const caja = utilesObjetos.caja();
+console.log(caja);
+console.log(caja.sumaComprobantes());
+console.log(caja.sumaValores());
 
 
