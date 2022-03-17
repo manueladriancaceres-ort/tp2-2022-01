@@ -8,3 +8,12 @@ console.log(resultado);
 
 console.log(arrays.sumaPares(miArreglo));
 
+// objetos
+
+const persona = {
+    "nombre" : "Juan",
+    "apellido" : "Gomez"
+}
+
+console.log(persona);
+
