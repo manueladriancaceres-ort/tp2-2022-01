@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scr/index.js",
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manueladriancaceres-ort/tp2-2022-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manueladriancaceres-ort/tp2-2022-01/issues"
+  },
+  "homepage": "https://github.com/manueladriancaceres-ort/tp2-2022-01#readme"
+}
