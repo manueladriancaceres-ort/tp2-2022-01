@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "Proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/indexTest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -23,6 +23,4 @@ const caja = {
     }
 }
 
-let miLet = 10;
-miLet = 'hola';
-console.log(miLet);
+export {caja};
