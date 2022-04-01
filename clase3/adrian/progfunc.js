@@ -51,3 +51,26 @@ function nuevaListaOrdenada(unaLista) {
 }
 
 console.log(nuevaListaOrdenada(unaLista));
+
+
+const listaClientes = [
+    {codigo:12,nombre:"Juan"},
+    {codigo:1,nombre:"Pedro"},
+    {codigo:4,nombre:"Carlos"},
+]
+
+console.log(listaClientes.sort( (a,b) => a.codigo - b.codigo  )  );
+
+console.log(listaClientes.sort( (a,b) => a.codigo - b.codigo  )  );
+
+console.log(listaClientes.sort( (a, b) => {
+    if (a.nombre > b.nombre) {
+      return 1;
+    }
+    if (a.nombre < b.nombre) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  }));
+  
