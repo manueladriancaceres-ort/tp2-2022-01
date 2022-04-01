@@ -1,0 +1,1 @@
+import {caja} from '../../src/service/caja.js'
