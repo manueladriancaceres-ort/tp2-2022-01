@@ -1,1 +1,1 @@
-console.log('Matias Lo Castro - Clase 3')
+console.log('Matias Lo Castro')
