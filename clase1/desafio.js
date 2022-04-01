@@ -22,3 +22,7 @@ const caja = {
         // esta cerrada la caja
     }
 }
+
+let miLet = 10;
+miLet = 'hola';
+console.log(miLet);
