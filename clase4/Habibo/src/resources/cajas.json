@@ -1,0 +1,65 @@
+[
+    {
+        "codigo": 100,
+        "descripcion": "Caja del dia 6/4",
+        "comprobantes": [
+            {
+                "codigo": 8,
+                "importe": 1000,
+                "tipo": "I"
+            },
+            {
+                "codigo": 2,
+                "importe": 500,
+                "tipo": "E"
+            },
+            {
+                "codigo": 3,
+                "importe": 1000,
+                "tipo": "I"
+            },
+            {
+                "codigo": 4,
+                "importe": 500,
+                "tipo": "E"
+            }
+        ],
+        "valores": {
+            "mil": 5,
+            "cien": 45,
+            "diez": 5
+        }
+    },
+    {
+        "codigo": 101,
+        "descripcion": "Caja del dia 7/4",
+        "comprobantes": [
+            {
+                "codigo": 8,
+                "importe": 1000,
+                "tipo": "I"
+            },
+            {
+                "codigo": 2,
+                "importe": 500,
+                "tipo": "E"
+            },
+            {
+                "codigo": 3,
+                "importe": 1000,
+                "tipo": "I"
+            },
+            {
+                "codigo": 4,
+                "importe": 500,
+                "tipo": "E"
+            }
+        ],
+        "valores": {
+            "mil": 5,
+            "cien": 45,
+            "diez": 5
+        }
+    }
+
+]
