@@ -1,12 +1,16 @@
 {
   "type": "module",
-  "name": "matiaslocastro",
+  "name": "habibo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "start": "node src/index.js",
-    "test": "node test/indexTest.js"
+    "start":"node src/index.js",
+    "test": "node test/indexTest.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
