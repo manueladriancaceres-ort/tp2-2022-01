@@ -1,17 +1,14 @@
 {
   "type": "module",
-  "name": "matiaslocastro",
+  "name": "sabrinavalansi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node test/indexTest.js"
+    "test": "node test/indexText.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "license": "ISC"
 }

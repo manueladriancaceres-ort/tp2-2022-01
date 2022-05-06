@@ -1,5 +1,7 @@
-console.log("HOla index.js")
+console.log("index.js");
 
-import {} from '../src/modelos/caja.js'
+import {caja} from './modelos/caja.js'
 
-console.log(caja);
+console.log(caja.sumaValores());
+console.log(caja.listaComprobantes());
+
