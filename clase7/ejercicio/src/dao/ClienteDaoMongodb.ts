@@ -28,11 +28,9 @@ class ClienteDaoMongodb implements Dao<Cliente,string> {
         const findResult = await collection.findOne({nombre:clave});        
         await this.conectarMongodb.desconectar();
         const cliente = new Cliente("",0);
-        try {
+        if(findResult !== null) {
             cliente.documento = findResult.documento;
             cliente.nombre = findResult.nombre;
-        } catch(error) {
-            console.log(error);            
         }
         return Promise.resolve(cliente);
     }
