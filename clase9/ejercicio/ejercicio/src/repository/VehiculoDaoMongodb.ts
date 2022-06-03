@@ -22,11 +22,12 @@ class VehiculoDaoMongodb implements Dao<Vehiculo,string> {
         await this.conectarMongodb.desconectar();
         return Promise.resolve(vehiculos);
     }
+    
     // si no encuentra un vehiculo, devuelve un objeto vacio
     async get (clave: string) : Promise<Vehiculo> {
         const db = await this.conectarMongodb.conectar();
-        const collection = db.collection('Vehiculos');
-        const findResult = await collection.findOne({nombre:clave});        
+        const collection = db.collection('vehiculos');
+        const findResult = await collection.findOne({patente:clave});        
         await this.conectarMongodb.desconectar();
         const vehiculo = new Vehiculo("","");
         if(findResult !== null) {
@@ -35,9 +36,19 @@ class VehiculoDaoMongodb implements Dao<Vehiculo,string> {
         }
         return Promise.resolve(vehiculo);
     }
-    delete (Element: Vehiculo) : Promise<Vehiculo> {
-        const vehiculo = new Vehiculo("","");
-        return Promise.resolve(vehiculo);
+
+    async delete (element: Vehiculo) : Promise<boolean> {
+        const db = await this.conectarMongodb.conectar();
+        const collection = db.collection('vehiculos');
+        const findResult = await collection.deleteOne({patente:element.patente}); 
+        await this.conectarMongodb.desconectar();
+        let rta = false;
+        if (findResult.deletedCount > 0) {
+            rta = true;
+        }
+        console.log("Estado de rta " + rta );
+        
+        return Promise.resolve( rta );
     }  
 }
 

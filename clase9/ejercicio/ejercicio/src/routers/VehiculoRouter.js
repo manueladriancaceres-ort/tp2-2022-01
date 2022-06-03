@@ -9,6 +9,9 @@ class VehiculoRouter {
         this.app.route(this.nombre)
             .get(VehiculoController.getAll)
             .post(VehiculoController.add);
+        this.app.route(this.nombre + "/:patente")
+            .get(VehiculoController.get)
+            .delete(VehiculoController.delete);
         return this.app;
     }
 }

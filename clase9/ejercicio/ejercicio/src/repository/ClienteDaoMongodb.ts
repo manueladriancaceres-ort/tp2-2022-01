@@ -34,9 +34,10 @@ class ClienteDaoMongodb implements Dao<Cliente,string> {
         }
         return Promise.resolve(cliente);
     }
-    delete (Element: Cliente) : Promise<Cliente> {
+    delete (Element: Cliente) : Promise<boolean> {
+        // falta implementar
         const cliente = new Cliente("",1);
-        return Promise.resolve(cliente);
+        return Promise.resolve(false);
     }  
 }
 

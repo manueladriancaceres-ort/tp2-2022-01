@@ -48,8 +48,9 @@ class ClienteDaoMongodb {
         });
     }
     delete(Element) {
+        // falta implementar
         const cliente = new Cliente("", 1);
-        return Promise.resolve(cliente);
+        return Promise.resolve(false);
     }
 }
 export { ClienteDaoMongodb };

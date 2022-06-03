@@ -13,9 +13,9 @@ class ClienteDaoMemoria implements Dao<Cliente,string> {
     get (clave: string) : Promise<Cliente> {
         return Promise.resolve(this.clientes.filter(cliente => cliente.documento.toString() == clave )[0]);
     }   
-    delete (Element: Cliente) : Promise<Cliente> {
+    delete (Element: Cliente) : Promise<boolean> {
         // implementar
-        return Promise.resolve(Element);    
+        return Promise.resolve(false);    
     }
 }
 

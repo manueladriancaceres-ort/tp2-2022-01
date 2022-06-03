@@ -14,7 +14,7 @@ class ClienteDaoMemoria {
     }
     delete(Element) {
         // implementar
-        return Promise.resolve(Element);
+        return Promise.resolve(false);
     }
 }
 export default ClienteDaoMemoria;

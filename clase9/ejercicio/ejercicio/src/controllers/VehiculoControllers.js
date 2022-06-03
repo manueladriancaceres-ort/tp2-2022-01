@@ -21,5 +21,29 @@ class VehiculoController {
             res.status(200).send(yield vehiculoDaoMongodb.add(req.body));
         });
     }
+    get(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const vehiculoDaoMongodb = new VehiculoDaoMongodb();
+            const rta = yield vehiculoDaoMongodb.get(req.params.patente);
+            if (rta.patente != "") {
+                res.status(200).send(rta);
+            }
+            else {
+                res.status(404).send({ mensaje: "no se encuentran registros para " + req.params.patente });
+            }
+        });
+    }
+    // tratar de hacer bajas logicas
+    delete(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const vehiculoDaoMongodb = new VehiculoDaoMongodb();
+            if (yield vehiculoDaoMongodb.delete({ patente: req.params.patente, color: "" })) {
+                res.status(201).send({ mensaje: "Registro eliminado para patente: " + req.params.patente });
+            }
+            else {
+                res.status(400).send({ mensaje: "no se encuentran registros para " + req.params.patente });
+            }
+        });
+    }
 }
 export default new VehiculoController();
